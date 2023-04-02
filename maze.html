@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <title>迷路ゲーム</title>
+    <style>
+        #game-board {
+            width: 400px;
+            height: 400px;
+            background-color: #eee;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+            position: relative;
+        }
+
+        .wall {
+            background-color: #333;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+        }
+
+        .player {
+            background-color: blue;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+
+        }
+
+        .goal {
+            background-color: green;
+            width: 40px;
+            height: 40px;
+            position: absolute;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="game-board">
+            <div class="wall" style="top: 0px; left: 0px;"></div>
+            <div class="wall" style="top: 0px; left: 40px;"></div>
+            <div class="wall" style="top: 0px; left: 80px;"></div>
+            <div class="wall" style="top: 40px; left: 80px;"></div>
+            <div class="wall" style="top: 80px; left: 80px;"></div>
+            <div class="wall" style="top: 120px; left: 80px;"></div>
+            <div class="wall" style="top: 160px; left: 80px;"></div>
+            <div class="wall" style="top: 200px; left: 80px;"></div>
+            <div class="wall" style="top: 240px; left: 80px;"></div>
+            <div class="wall" style="top: 240px; left: 120px;"></div>
+            <div class="wall" style="top: 240px; left: 16px;"></div>
+            <div class="wall" style="top: 240px; left: 200px;"></div>
+            <div class="wall" style="top: 240px; left: 240px;"></div>
+            <div class="wall" style="top: 200px; left: 240px;"></div>
+            <div class="wall" style="top: 160px; left: 240px;"></div>
+            <div class="wall" style="top: 120px; left: 240px;"></div>
+            <div class="wall" style="top: 80px; left: 240px;"></div>
+            <div class="wall" style="top: 40px; left: 160px;"></div>
+            <div class="player" style="top: 40px; left: 0px;"></div>
+            <div class="goal" style="top: 200px; left: 320px;"></div>
+            <script src="maze2.js"></script>
+     </body>
+ </html>
+
